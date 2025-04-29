@@ -8,7 +8,7 @@ class Model:
         self.aeroporti = DAO.getAllAeroporti()
         self.idMap_aeroporti = {}
         for a in self.aeroporti:
-            self.idMap_aeroporti[a.ID] = a
+            self.idMap_aeroporti[a.ID] = a  # associo l'id all'oggetto Aeroporto in una mappa
 
     def buildGraph(self, x):
         grafo = nx.Graph()
